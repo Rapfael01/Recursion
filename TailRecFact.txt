@@ -1,0 +1,11 @@
+function factT(accu, n)
+if n>0
+then
+accu.value=accu.value*n
+return factT(accu, n-1)
+end
+end
+
+accu={value=1}
+factT(accu, 5)
+print(accu.value)

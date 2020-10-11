@@ -1,0 +1,11 @@
+function sumt(accu, n)
+if n>0
+then
+accu.value=accu.value+n
+return sumt(accu, n-1)
+end
+end
+
+accu={value=0}
+sumt(accu, 200)
+print(accu.value)

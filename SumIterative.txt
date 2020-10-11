@@ -1,0 +1,10 @@
+function SumIt(n)
+result={value=0}
+for i=n,1,-1
+do
+result.value=result.value+i
+end
+return result.value
+end
+
+print(SumIt(5))

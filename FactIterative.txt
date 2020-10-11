@@ -1,0 +1,10 @@
+function FactIt(n)
+result={value=1}
+for i=n,2,-1
+do
+result.value=result.value*i
+end
+return result.value
+end
+
+print(FactIt(5))

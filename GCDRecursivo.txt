@@ -1,0 +1,17 @@
+function GCD ( ... )
+    arg = table.pack(...)
+    if arg.n >2
+    then
+        tmp = table.remove(arg,1) 
+        return GCD (tmp, pgcd( unpack(arg) ))
+    else
+        a,b = unpack(arg)
+        repeat
+        a , b = b , a % b
+        until a % b == 0
+        return b
+    end
+end
+
+
+print (GCD(18,12))

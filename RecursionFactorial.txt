@@ -1,0 +1,7 @@
+function fact(n)
+if n>0 then
+return n*fact(n-1)
+end
+end
+
+print(fact(10000000000000000000))
